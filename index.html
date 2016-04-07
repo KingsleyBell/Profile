@@ -1,123 +1,177 @@
 <!doctype html>
 
 <html lang="en">
-  <head>
+<head>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="scripts/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <!-- Favicon -->    
-    <link rel="icon" type="image/png" href="favicon.png">    
+    <link rel="icon" type="image/png" href="images/favicon.png">    
     <meta name="msapplication-TileColor" content="#ffffff">    
     <meta name="theme-color" content="#ffffff">  
 
 
     <!-- My CSS file -->
-    <link rel="stylesheet" type="text/css" href="style.css">    
+    <link rel="stylesheet" type="text/css" href="scripts/style.css">    
+
+    <!-- JQueary -->
+    <script type="text/javascript" src="scripts/jquery-1.12.2.min.js"></script>
+
+    <!-- d3 -->
+    <script type="text/javascript" src="scripts/d3.min.js" charset="utf-8"></script>
+    
+    <!-- JavaScript files -->
+    <script type="text/javascript" src="scripts/profile.js" charset="utf-8"></script>
+
 
     <meta charset="utf-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <title>Luke Bell</title>  
 
-  </head>
+</head>
 
-  <body>
-    <!-- Inside page Borders -->
-    <div class="frame">    
-      <!-- Columns -->
-      <div class="grid">
-      <!-- Left Column -->
-      <div class="col-1-4" style="padding:0px; background: none;">
-        <div style="padding:10px;">
-          <!-- Profile Picture -->
-          <img border="0" title="Profile" alt="Picture" src="images/prof.jpg" style="max-width: 100%;">
-          <!-- Transcript Button -->
-          <a href="resources/Academic_Transcript" style="text-decoration: none;" target="_blank">
-            <div class="profile-button">
-              <img  class="icon" border="0" title="Academic" alt="hat" src="images/academic.png">
-              <x style="float:right;">ACADEMIC TRANSCRIPT</x>              
-            </div>
-          </a>
-          <!-- Resume Button -->
-          <a href="resources/resume.pdf" style="text-decoration: none;" target="_blank">
-            <div class="profile-button">
-              <img  class="icon" border="0" title="Paper" alt="CV" src="images/paper.png">
-              <x style="float: right;">RESUME</x>
-            </div>
-          </a>
-          <!-- GitHub Button -->
-          <a href="https://github.com/KingsleyBell" style="text-decoration: none;" target="_blank">
-            <div class="profile-button">
-              <img  class="icon" border="0" title="Paper" alt="CV" src="images/github.png">
-              <x style="float: right;">GITHUB</x>
-            </div>
-          </a>
+<body>
+    <!-- Main -->
+    <div class="container-fluid">
+
+        <!-- Left Column -->
+        <div id="leftPanel" class="col-sm-14">
+            <!-- Profile Picture -->
+            <img border="0" title="Profile" alt="Picture" src="images/prof.jpg" style="max-width: 100%;">
+            <!-- Transcript Button -->
+            <a href="resources/Academic_Transcript" style="text-decoration: none;" target="_blank">
+              <div class="profile-button">
+                <img  class="icon" border="0" title="Academic" alt="hat" src="images/academic.png">
+                <x style="float:right;">ACADEMIC TRANSCRIPT</x>              
+                </div>
+            </a>
+            <!-- Resume Button -->
+            <a href="resources/resume.pdf" style="text-decoration: none;" target="_blank">
+                <div class="profile-button">
+                    <img  class="icon" border="0" title="Paper" alt="CV" src="images/paper.png">
+                    <x style="float: right;">RESUME</x>
+                </div>
+            </a>
+            <!-- GitHub Button -->
+            <a href="https://github.com/KingsleyBell" style="text-decoration: none;" target="_blank">
+                <div class="profile-button">
+                    <img  class="icon" border="0" title="Paper" alt="CV" src="images/github.png">
+                    <x style="float: right;">GITHUB</x>
+                </div>
+            </a>
+            <center>
+            <a href="http://www.addictinggames.com/newGames/puzzle-games/recoil/recoil.swf" target="_blank">
+                <img border="0" title="Fun flash game!" alt="Recoil" src="images/recoil.png" width="273" height="84">
+            </a>
+        </center> 
         </div>
-      </div>
-      <!-- Middle Column -->
-      <div class="col-1-2">
-        <div class="padded-text">
-          <div class="bottom-border">
-            <h1>Luke Bell</h1>
-            <h2 style="color: #ff604b; font-weight: normal;"> Computer Science Student </h2>
-          </div>
-          <br />
-          <div class="col-1-2">
-            Lorem ipsum dolor sit amet, ad his solet ubique labore, altera aperiri te eos. Mea noster insolens id. Nec denique detracto atomorum in. Fastidii vituperatoribus vis an, modus eloquentiam eum eu. Vis graeci docendi ea, vero summo malorum eu eos. Nam alienum insolens ne.
+        <!-- End of Left Column -->
 
-            Paulo lobortis pericula ne nec. Vel no saepe vocent menandri, ne oratio perpetua nam. Novum persius sadipscing quo et. Per ea primis voluptatum, vim deleniti nominati efficiendi in.
+        <!-- Middle Column -->
+        <div id="middlePanel" class="col-sm-32">
+            <div class="padded-text">
+                <div class="bottom-border">
+                    <h1>Luke Bell</h1>
+                    <h2> Computer Science Student </h2>
+                </div>
+                <br />
+                <div class="col-sm-60">
+                    Website under construction. If you have any ideas contact me at lukekingsleybell@gmail.com
+                </div>
+                <div class="col-sm-30">
+                    Lorem ipsum dolor sit amet, ad his solet ubique labore, altera aperiri te eos. Mea noster insolens id. Nec denique detracto atomorum in. Fastidii vituperatoribus vis an, modus eloquentiam eum eu. Vis graeci docendi ea, vero summo malorum eu eos. Nam alienum insolens ne.
 
-            Vivendum scripserit duo no, vis an affert exerci sanctus. Nisl civibus salutatus ad cum, usu commodo omittam te, at qui vitae putent voluptatibus. Eos ex malis timeam petentium. In lorem solet persecuti pri, pri tempor putent animal id.
-          </div>
-          <div class="col-1-2">
-            Omnesque petentium ea vel. An copiosae assueverit nec, purto case ullum mel in. Ex brute phaedrum pro, justo nulla ad sed. Iudico timeam sadipscing te qui, quem modo hinc pro ne. Est probo justo suavitate ne.
+                    Paulo lobortis pericula ne nec. Vel no saepe vocent menandri, ne oratio perpetua nam. Novum persius sadipscing quo et. Per ea primis voluptatum, vim deleniti nominati efficiendi in.
 
-            No ius illum errem consequuntur, veniam eripuit pri id. Causae iisque lucilius at mel, quem posse minim id vis. Ut virtute iracundia ius, mei no novum laoreet adolescens, aeque ludus at mea. Ne cum fabulas mandamus, aliquam reprimique mei no, pro an dicat posidonium. Pro ut melius percipit, ex oblique temporibus liberavisse pro. Ius simul doctus ut, vel singulis liberavisse ad.
-          </div>
+                    Vivendum scripserit duo no, vis an affert exerci sanctus. Nisl civibus salutatus ad cum, usu commodo omittam te, at qui vitae putent voluptatibus. Eos ex malis timeam petentium. In lorem solet persecuti pri, pri tempor putent animal id.
+                </div>
+                <div class="col-sm-30">
+                    Omnesque petentium ea vel. An copiosae assueverit nec, purto case ullum mel in. Ex brute phaedrum pro, justo nulla ad sed. Iudico timeam sadipscing te qui, quem modo hinc pro ne. Est probo justo suavitate ne.
+
+                    No ius illum errem consequuntur, veniam eripuit pri id. Causae iisque lucilius at mel, quem posse minim id vis. Ut virtute iracundia ius, mei no novum laoreet adolescens, aeque ludus at mea. Ne cum fabulas mandamus, aliquam reprimique mei no, pro an dicat posidonium. Pro ut melius percipit, ex oblique temporibus liberavisse pro. Ius simul doctus ut, vel singulis liberavisse ad.
+                </div>
+            </div>
         </div>
-      </div>
-      <!-- Right Column -->
-        <div class="col-1-4">
-          <div class="padded-text" style="font-weight:bold;">
-            <!-- Instagram -->
-            Check out my <a style="color: black; text-decoration: none;" href="https://instagram.com/luke.kingsley/" target="_blank">
-              <b style="color:#ff604b;"> 
-                Instagram
-              </b>
-            </a>      
-            <div class = "insta">
-              <!-- LightWidget WIDGET -->
-              <script src="//lightwidget.com/widgets/lightwidget.js">
-              </script>
-              <iframe src="//lightwidget.com/widgets/081b5df1de015c969de00624c50aaf29.html" id="lightwidget_081b5df1de" name="lightwidget_081b5df1de"  scrolling="yes" allowtransparency="true" class="lightwidget-widget" style="width: 100%; max-height: 400px; border: 0; overflow: hidden;">
-              </iframe>
-            </div>  
-          </div>
-        </div>  
-    <!-- End of frame -->    
+        <!-- End of Middle Column -->
+
+        <!-- Right Column -->
+        <div id="rightPanel" class="col-sm-14">
+            <div class="padded-text" style="font-weight:bold;">
+                <!-- Instagram -->
+                Check out my 
+                <a style="color: black; text-decoration: none;" href="https://instagram.com/luke.kingsley/" target="_blank">
+                    <b style="color:#ff604b;"> 
+                        Instagram
+                    </b>
+                </a>
+                <!-- LightWidget WIDGET -->
+                <div class = "insta">
+                    <script src="//lightwidget.com/widgets/lightwidget.js"></script>
+                    <iframe id="instaWidget" src="//lightwidget.com/widgets/081b5df1de015c969de00624c50aaf29.html" id="lightwidget_081b5df1de" name="lightwidget_081b5df1de"  scrolling="yes" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+                </div>
+            </div>
+        </div>
+        <!--  End of Right Column -->
+
+        <!-- Full width -->
+        <div id="skillsPanel" class="col-sm-46" style="float: right;">
+            <div class="padded-text">
+                <div class="bottom-border">
+                    <h2> Professional Skills </h2>
+                </div>            
+                <div id ="codingSkills" class="skills-box">
+                    <div class="col-sm-57">
+                        
+                    </div>
+                    <div class="col-sm-3 skill-name-box">
+                        CODING
+                    </div>
+                </div>
+                <div id ="designSkills" class="skills-box">
+                    <div class="col-sm-57">
+
+                    </div>
+                    <div class="col-sm-3 skill-name-box">
+                        DESIGN
+                    </div>
+                </div>
+                <div id ="characterSkills" class="skills-box">
+                    <div class="col-sm-57">
+
+                    </div>
+                    <div class="col-sm-3 skill-name-box">
+                        CHARACTER
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of full width -->
+
     </div>
-      <center>
-        <a href="http://www.addictinggames.com/newGames/puzzle-games/recoil/recoil.swf" target="_blank">
-            <img border="0" title="Fun flash game!" alt="Recoil" src="images/recoil.png" width="273" height="84">
-        </a>
-      </center>            
-    </div>
+    <!--  End of Main -->    
+
     <!-- Footer -->
-    <div class="footer">      
-      <!-- Snaochat logo -->
-      <a style="text-decoration:none;" href="images/snapcode.png" target="_blank">
-        <img border="0" title="Scan me! Username: lukey_bell" alt="Snapchat" src="images/snapcode.png" width="60" height="60" target="_blank">
-      </a>
-      <!-- Facebook logo -->
-      <a style="text-decoration:none;" href="https://www.facebook.com/lukekingsleybell" target="_blank">
-        <img border="0" title="Facebook" alt="Facebook" src="images/facebook.png" width="60" height="60">
-      </a> 
-      <!-- Instagram logo -->
-      <a style="text-decoration:none;" href="https://instagram.com/luke.kingsley/" target="_blank">
-        <img border="0" title="Instagram" alt="Instagram" src="images/instagram.png" width="60" height="60">
-      </a>
-      <br />
-      <!-- Email -->
-      info@lukebell.co.za
+    <div class="container-fluid">
+        <div class="footer">                              
+            <!-- Instagram logo -->
+            <a style="text-decoration:none;" href="https://instagram.com/luke.kingsley/" target="_blank">
+                <img border="0" title="Instagram" alt="Instagram" src="images/instagram.png" width="60" height="60">
+            </a>
+            <!-- Facebook logo -->
+            <a style="text-decoration:none;" href="https://www.facebook.com/lukekingsleybell" target="_blank">
+                <img border="0" title="Facebook" alt="Facebook" src="images/facebook.png" width="60" height="60">
+            </a> 
+            <!-- Snaochat logo -->
+            <a style="text-decoration:none;" href="images/snapcode.png" target="_blank">
+                <img border="0" title="Scan me! Username: lukey_bell" alt="Snapchat" src="images/snapcodeIcon.png" width="60" height="60" target="_blank">
+            </a>
+            <br />
+            <!-- Email -->
+            info@lukebell.co.za
+        </div>
     </div>
-  <!-- End of Body -->
-  </body>
-</html>
+
+<!-- End of Body -->
+</body>
